@@ -4,7 +4,9 @@
 // date: 07/08/2025
 // version: 1.0.0
 
-// Função para classificar os heróis com base em seus pontos de experiência
+
+// #Função para classificar os heróis com base em seus pontos de experiência
+
 // A função percorre a lista de pontos de experiência e atribui um nível correspondente a cada herói, retornando um array com os níveis classificados
 // Níveis: Ferro, Bronze, Prata, Ouro, Platina, Imortal, Radiante
 // A classificação é feita com base nos seguintes critérios:
@@ -28,7 +30,7 @@ let heroName = ["Estelar", "Robin", "Ravena", "Mutano", "Cyborg", "Terra", "Supe
 let gender = ["Feminino", "Masculino", "Feminino", "Masculino", "Masculino", "Feminino", "Masculino", "Masculino", "Masculino", "Masculino"];
 let heroxp = [8732, 1294, 5586, 7031, 9842, 3417, 2150, 6198, 4970, 7623, 21500, 6198, 4970, 7623];
 
-// -- Classificação de Nível de Heróis --
+// -- Função para definir a classe de acordo com os pontos de experiência --
 
 function classifyHero(heroName, heroxp) {
     let heroLevel = [];
@@ -52,21 +54,21 @@ function classifyHero(heroName, heroxp) {
     return heroLevel;
 }
 
-// Classifica os heróis e armazena os níveis em um array
+// -- Classifica os heróis e armazena os níveis em um array--
+
 let heroLevels = classifyHero(heroName, heroxp);
 
 // -- Exibe a classificação de nível dos heróis --
+
 console.log("== Classificação de Nível de Heróis ==\n");
 
 for (let i = 0; i < heroName.length; i++) {
     if (gender[i] == "Feminino") {
-        console.log(heroName[i] + " é uma heroína classe: " + heroLevels[i]);
+        console.log(heroName[i] + " é uma heroína classe: " + heroLevels[i]); // Exibe o nome e a classe da heroína
     } else {
-        console.log(heroName[i] + " é um herói classe: " + heroLevels[i]);
+        console.log(heroName[i] + " é um herói classe: " + heroLevels[i]); // Exibe o nome e a classe do herói
     }
 }
-
-console.log("\n== Fim da Classificação de Nível de Heróis ==\n");
-
+// -- Fim da exibição --
 
 // -- Fim do programa --
