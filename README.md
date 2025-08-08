@@ -78,7 +78,7 @@ Clicando no botão **"<>Code"** poderá **clonar o repositório** ou fazer o dow
 
 Clique com o **botão direito** em um **local vazio** na pasta e clique em **"Abrir no Terminal "**, depois é só digitar ou colar:
 
-`node index.js`
+```node index.js```
 
 ---
 ## Caso deseje alterar os dados
@@ -91,20 +91,21 @@ Você poderá alterar os dados facilmente caso desejar da seguinte forma:
 
 #### Nome dos heróis 
 
-  `let heroName = ["(Digite aqui)"];`
+  ```let heroName = ["(Digite aqui)"];```
 
 
 #### Gênero
   
-  `let gender = ["(Digite aqui)"];`
+  ```let gender = ["(Digite aqui)"];```
 
 
 #### XP
   
-  `let heroxp = [(Digite aqui)];`
+  ```let heroxp = [(Digite aqui)];```
   
 #### Mensagem para o Gênero Feminino
 
+```
 for (let i = 0; i < heroName.length; i++) {
 
     `if (gender[i] == "Feminino") {
@@ -117,10 +118,12 @@ for (let i = 0; i < heroName.length; i++) {
 
     }
 
-}`
+}
+```
 
 #### Mensagem para o Gênero Masculino
 
+```
 for (let i = 0; i < heroName.length; i++) {
 
     `if (gender[i] == "Feminino") {
@@ -134,5 +137,6 @@ for (let i = 0; i < heroName.length; i++) {
     }
 
 }
+```
 
 ---
